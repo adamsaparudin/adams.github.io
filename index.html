@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <title>My new Home</title>
+    <style type="text/css">
+      table, td {
+        border: 1px solid black;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-8/htmlcss1-img_bicycles.jpeg") no-repeat top center;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .header {
+        background-color: #ffff00;
+        box-sizing: border-box;
+        border: 8px dashed black;
+        padding: 20px;
+      }
+
+      h1, h2 {
+        text-align: center;
+        color: red;
+        font-family: arial, courier, serif;
+      }
+      .header h1 {
+        line-height: 1em;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: arial, courier, serif;
+        letter-spacing: 0.1em;
+      }
+      .header h2{
+        line-height: 28px;
+        font-size: 28px;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+
+      .body {
+        background-color: white;
+        box-sizing: border-box;
+        width: 90%;
+        margin: auto;
+        border: 3px solid black;
+        margin-top: 70px;
+        padding: 50px;
+      }
+
+      .body p {
+        font-weight: bold;
+      }
+
+      .comment {
+        background: -webkit-linear-gradient(yellow, green);   box-sizing: border-box;
+        width: 500px;
+        height: 600px;
+        float: right;
+        padding: 50px;
+        border-radius: 50px 0px 0px 50px;
+        border-left: 10px solid black;
+        margin: 70px 0 0 120px;
+      }
+      .comment h2 {
+        font-family: courier, serif, arial;
+        text-align: left;
+      }      
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Adams WebPage</h1>
+      <h2>Welcome Everyone!</h2>
+    </div>
+    <div class="body">
+        <p>Hi, I'm Adam and this is my first page. Let's be fullstack webdeveloper with Hacktiv8</p>
+        <p>This is my target list</p>
+        <ol>
+          <li>1. Being fullstack develper</li>
+          <li>2. Create great E-commerce website</li>
+        </ol>
+        <p>Here is my contact</p>
+        <ul>
+        <li>Email: adams@hacktiv8.com</li>
+        <li>Phone: 62 812 1466 9219</li>
+        </ul>
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Morning</td>
+            <td>Evening</td>
+            <td>Afternoon</td>
+            <td>Night</td>
+          </tr>
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td colspan="4" rowspan="7" ><h2>Eat, Coding, and Sleep</h2></td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+          </tr>
+        </tbody>
+        </thead>
+      </table>
+      </div>
+      <div class="comment">
+      <h2>Leave your comment below</h2>
+      <form>
+      <p>
+      <label for="first-name">First Name:</label>
+      <br>
+      <input id="first-name" type="text">
+      <br>
+      <label for="last-name">Last Name:</label>
+      <br>
+      <input id="last-name" type="text">
+      </p>
+      <p>
+      <label>Gender:</label>
+      <br>
+      <input id="male-radio" type="radio">
+      <label for="male-radio">Pria</label>
+      <br>
+      <input id="female-radio" type="radio">
+      <label for="female-radio" type="radio">Female</label>
+      <br>
+      <input id="other-radio" type="radio">
+      <label for="other-radio" type="radio">Female</label>
+      </p>
+
+      <p>
+      <label>Favorite Cars:</label>
+      <br>
+      <select>
+        <option>Volvo</option>
+        <option>Lamborghini</option>
+        <option>Mustang</option>
+      </select>
+      </p>
+
+      <p>
+      <label>Language Spoken:</label>
+      <br>
+      <input type="checkbox">
+      <label>Bahasa Indonesia</label>
+      <br>
+      <input type="checkbox">
+      <label>English</label>
+      <br>
+      <input type="checkbox">
+      <label>Other</label>
+      </p>
+
+      <p>
+      <label>Bio:</label>
+      <br>
+      <textarea width="300px" height="300px"></textarea>
+      </p>
+        <input type="submit">
+      </form>
+    </div>
+  </body>
+</html>
